@@ -1,5 +1,5 @@
 {
-  "name": "spaceX",
+  "name": "SpaceX",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,8 +10,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.10",
+    "@react-navigation/native": "^7.0.3",
+    "@react-navigation/stack": "^7.0.4",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "date-fns": "^4.1.0",
+    "graphql": "^16.9.0",
     "react": "18.3.1",
-    "react-native": "0.76.2"
+    "react-native": "0.76.2",
+    "react-native-gesture-handler": "^2.21.1",
+    "react-native-safe-area-context": "^4.14.0",
+    "react-native-screens": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
