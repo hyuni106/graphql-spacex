@@ -1,5 +1,12 @@
 import React from 'react';
-import {Dimensions, Image, StyleSheet, Text, View} from 'react-native';
+import {
+  Dimensions,
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {Launch} from 'models';
 import {Colors} from 'styles';
 import {ImgRocket} from 'assets/pngs';
@@ -18,7 +25,7 @@ const LaunchItem = (props: LaunchItemProps): React.ReactElement => {
   const launchDate = format(launch.launch_date_utc, DTIME_FORMAT);
 
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <Image
         style={styles.missionImage}
         source={
@@ -31,7 +38,7 @@ const LaunchItem = (props: LaunchItemProps): React.ReactElement => {
         <Text style={styles.launchDateText}>{launchDate}</Text>
         <Text style={styles.missionNameText}>{launch.mission_name}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

@@ -32,7 +32,7 @@ export interface LaunchesPastData {
 
 const useAllLaunches = (limit: number, offset: number) => {
   return useQuery<LaunchesPastData>(GET_ALL_LAUNCHES, {
-    variables: {limit, offset, sort: 'launch_date_utc', order: 'desc'},
+    variables: {limit, offset},
     fetchPolicy: 'cache-and-network',
   });
 };
